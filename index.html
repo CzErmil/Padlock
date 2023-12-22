@@ -6,59 +6,42 @@
     <meta name="description" content="">
     <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
     <meta name="generator" content="Hugo 0.84.0">
-    <title>Signin Template · Bootstrap v5.0</title>
+    <title>WODNE LAJNERY!!!!</title>
 
     <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/sign-in/">
 
-    
+    <script src="./script.js"></script>
 
     <!-- Bootstrap core CSS -->
-<link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="./assets/dist/css/bootstrap.min.css" rel="stylesheet">
 
-    <style>
-      .bd-placeholder-img {
-        font-size: 1.125rem;
-        text-anchor: middle;
-        -webkit-user-select: none;
-        -moz-user-select: none;
-        user-select: none;
-      }
-
-      @media (min-width: 768px) {
-        .bd-placeholder-img-lg {
-          font-size: 3.5rem;
-        }
-      }
-    </style>
-
-    
     <!-- Custom styles for this template -->
     <link href="signin.css" rel="stylesheet">
   </head>
   <body class="text-center">
     
 <main class="form-signin">
-  <form>
-    <img class="mb-4" src="../assets/brand/bootstrap-logo.svg" alt="" width="72" height="57">
-    <h1 class="h3 mb-3 fw-normal">Please sign in</h1>
-
-    <div class="form-floating">
-      <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
-      <label for="floatingInput">Email address</label>
-    </div>
-    <div class="form-floating">
-      <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
-      <label for="floatingPassword">Password</label>
-    </div>
-
-    <div class="checkbox mb-3">
-      <label>
-        <input type="checkbox" value="remember-me"> Remember me
-      </label>
-    </div>
-    <button class="w-100 btn btn-lg btn-primary" type="submit">Sign in</button>
-    <p class="mt-5 mb-3 text-muted">&copy; 2017–2021</p>
-  </form>
+  <div class="conteiner-lg my-5">
+      <div class="row">
+          <h1 id="result" class="result" >?</h1>  
+      </div>
+      <div class="row">
+        <div class="col-md-3">
+          <input id="a" class="form-control input-lg" type="text" maxlength="1" oninput="this.value=this.value.replace(/[^0-9]/g,'');" />
+        </div>
+        <div class="col-md-3">
+          <input id="b" class="form-control input-lg" type="text" maxlength="1" oninput="this.value=this.value.replace(/[^0-9]/g,'');" />
+        </div>
+        <div class="col-md-3">
+          <input id="c" class="form-control input-lg" type="text" maxlength="1" oninput="this.value=this.value.replace(/[^0-9]/g,'');" />
+        </div>
+        <div class="col-md-3">
+          <input id="d" class="form-control input-lg" type="text" maxlength="1" oninput="this.value=this.value.replace(/[^0-9]/g,'');" />
+        </div>
+      </div>
+      
+      <button class="w-100 btn btn-lg btn-success" type="submit" onClick="getResult()">Submit</button>
+  </div>
 </main>
 
 
